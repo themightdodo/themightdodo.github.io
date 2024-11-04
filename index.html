@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./fleur2.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Quentin Bovi</title>
+  <script type="module" crossorigin src="./assets/index-xIpvNjh3.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BXLaIakR.css">
+</head>
+
+<body>
+  <div class="main z-0 w-full min-h-screen h-full overflow-hidden absolute top-0 left-0">
+    <canvas id="screen" class="z-10"></canvas>
+  </div>
+  <div class="mixer mix-blend-darken ">
+    <div
+      class="bg-color z-10 w-full min-h-screen h-full overflow-hidden absolute top-0 left-0 bg-blanc2 transition-all ease-in-out duration-1000">
+    </div>
+    <div
+      class="bg-image opacity-15 z-10 w-full transition-all ease-in-out duration-1000  min-h-screen h-full overflow-hidden absolute top-0 left-0 bg-[url('./Images/ScreenTexture.png')] bg-cover">
+    </div>
+  </div>
+  <nav id="Nav">
+  </nav>
+  <main class="">
+    <div class="max-w-36 lg:max-w-md bg-blanc2 p-1 fixed z-30 m-2 lg:mx-8 lg:my-2 rounded-lg">
+      <p class="paragraphe">
+        Quentin bovi is a fresh graduate, a tech art, a french indie game developer. Focused on creating new experiences
+        with his knowledge in both programming, graphic design, and game design.
+
+      </p>
+    </div>
+  </main>
+  <div class="chargement w-full h-[100vh]  lg:px-[224px] items-center flex justify-center absolute top-0 left-0">
+    <div class="lg:flex z-20 items-end bg-blanc2 rounded-[16px] w-fit">
+      <p class="titre1 text-noir">Loading</p>
+      <img class="h-[124px] w-[124px] lg:h-[256px] lg:w-[256px]" src="./Chargement.gif" alt="" srcset="">
+    </div>
+    <div class="z-10 w-full min-h-screen h-full overflow-hidden absolute top-0 left-0 bg-blanc2"></div>
+    <div
+      class="opacity-15 z-10 w-full min-h-screen h-full overflow-hidden absolute top-0 left-0 bg-[url('./Images/ScreenTexture.png')] bg-cover">
+    </div>
+
+
+  </div>
+
+  <div
+    class="transi-enter w-full h-[100vh] lg:px-[224px] bg-blanc2  items-center flex justify-center absolute top-0 left-0 transition-all ease-in-out duration-1000">
+  </div>
+
+
+  <script src="./Scripts/NavInstancer.js" defer></script>
+  <script type="module" src="./Scripts/Transi.js" defer></script>
+
+</body>
+
+</html>

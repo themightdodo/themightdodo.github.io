@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="../fleur2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/index-BXLaIakR.css">
+    <title>EGO</title>
+</head>
+
+<body class="bg-blanc2 transition-all ease-in-out duration-1000  flex flex-col gap-2 lg:gap-6">
+    <nav id="Nav">
+    </nav>
+    <main class="px-2 pb-2 lg:px-8 lg:pb-8 w-full scroll-smooth">
+        <section class="w-full h-fit  bg-blanc2 rounded-t-lg outline outline-noir  outline-2
+        px-2 lg:px-8 lg:pr-[153px] py-1 lg:py-2 flex flex-col gap-1 lg:gap-4">
+            <nav class="flex flex-row text-noir  justify-between  items-center">
+                <div class="flex flex-row gap-1 lg:gap-4">
+                    <h1 class="titre4">
+                        <!--Titre-->EGO</h1>
+                    <p class="titre4">
+                        <!--Date-->2023/2024</p>
+                </div>
+                <div href="" class="button bg-bleu">
+                    <!--Lien vers le vrè projè-->
+                    <p>Demo available soon</p>
+                </div>
+            </nav>
+            <article class="h-full w-full flex flex-col lg:flex-row-reverse gap-1 lg:gap-2 ">
+                <iframe class="w-full h-full   aspect-video rounded-lg" width="1083" height="609"
+                    src="https://www.youtube.com/embed/9HhdRptZTsU?version=3&autoplay=1&mute=1&loop=1&autopause=0&playlist=9HhdRptZTsU&modestbranding=1&rel=0&controls=0"
+                    title="[unity] Here&#39;s a Particle based 3D Action Game | EGO Gameplay video" frameborder="0"
+                    allow="autoplay; loop;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div
+                    class="text-blanc2 w-full lg:w-fit h-auto bg-noir rounded-lg px-1 py-1 lg:px-6 lg:py-2 flex flex-col gap-1 lg:gap-2">
+                    <h3 class="titre4">
+                        Summary
+                    </h3>
+                    <a href="#Development" class="button2_rouge ">
+                        <p>The particle system as a Game</p>
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <a href="#Art" class="button2_vert">
+                        <p>A challenge of visibility</p>
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                    <a href="#GameDesign" class="button2_bleu">
+                        <p>A skill based game design</p>
+                        <i class="bi bi-caret-right-fill"></i>
+                    </a>
+                </div>
+            </article>
+            <footer class="w-full flex justify-center">
+                <p class="desc2 max-w-[924px]">
+                    It started as a fith semester solo school project, then was retaken this summer by me and my friend.
+                    I did everything but the enemy AI.
+                    Ego is a Hack'n slash in a top down view where you play as an elderly person revolting alone against
+                    the institution with the help of his smoke. Carry out sequences of attacks while smoking, set the
+                    clouds you have created on fire and explode those damn robots.
+                </p>
+            </footer>
+        </section>
+        <section id="Development" class="w-full h-fit   bg-rouge  outline outline-noir  outline-2
+        px-2 lg:px-8 lg:pr-[153px] py-1 lg:py-2 flex flex-col gap-1 lg:gap-4">
+            <nav class="flex flex-row text-blanc2  justify-between  items-center">
+                <div class="flex flex-row gap-1 lg:gap-4">
+                    <h1 class="titre4">
+                        <!--Titre-->The particle system as a Game</h1>
+                </div>
+            </nav>
+        </section>
+        <section class="w-full h-fit  bg-blanc2  outline outline-noir  outline-2
+        px-2 lg:px-8 py-1 lg:py-2 flex flex-col gap-1 lg:gap-4">
+            <article class="w-full py-2 flex flex-col lg:flex-row gap-1 lg:gap-2">
+                <p class="paragraphe w-full ">
+                    The goal here was to create a game where particles would be launched as attacks by the player. To
+                    answer this problem, I decided to base this combat system on unity’s particle system coupled with an
+                    algorithm that determines how to englobe the particles with bounds. I optimized this system heavily
+                    with the unity job/burst system to utilize multi threading.
+                </p>
+                <div class="w-full h-fit"><img class="w-full h-auto rounded-lg" src="../Images/EGO/Image1.png" alt=""
+                        srcset=""></div>
+            </article>
+        </section>
+        <section id="Art" class="w-full h-fit  bg-vert  outline outline-noir  outline-2
+        px-2 lg:px-8 lg:pr-[153px] py-1 lg:py-2 flex flex-col gap-1 lg:gap-4">
+            <nav class="flex flex-row text-blanc2  justify-between  items-center">
+                <div class="flex flex-row gap-1 lg:gap-4">
+                    <h1 class="titre4">
+                        <!--Titre-->A challenge of visibility</h1>
+                </div>
+            </nav>
+        </section>
+        <section class="w-full h-fit  bg-blanc2  outline outline-noir  outline-2
+        px-2 lg:px-8 py-1 lg:py-2 flex flex-col gap-1 lg:gap-4">
+            <article class="w-full py-2">
+                <p class="paragraphe max-w-xl">
+                    This is still an ongoing challenge, as you may have seen from the video above, sometimes all of the
+                    interacting gameplay elements can get quite messy visually. Since the first version a lot has been
+                    done, from tweaking the tone mapping/saturation to using the design standard’s colors to our
+                    advantage. Currently the next step would be to create a shader to visually make the smoke less
+                    dominant on the screen.
+                </p>
+            </article>
+            <section class="flex flex-col lg:flex-row gap-1 lg:gap-2">
+                <div class="w-full h-fit"><img class="w-full h-auto rounded-lg" src="../Images/EGO/Image2.png" alt=""
+                        srcset=""></div>
+                <div class="w-full h-fit"><img class="w-full h-auto rounded-lg" src="../Images/EGO/Image3.PNG" alt=""
+                        srcset=""></div>
+            </section>
+        </section>
+        <section id="GameDesign" class="w-full h-fit  bg-bleu  outline outline-noir  outline-2
+        px-2 lg:px-8 lg:pr-[153px] py-1 lg:py-2 flex flex-col gap-1 lg:gap-4">
+            <nav class="flex flex-row text-blanc2  justify-between  items-center">
+                <div class="flex flex-row gap-1 lg:gap-4">
+                    <h1 class="titre4">
+                        <!--Titre-->A skill based game design</h1>
+
+                </div>
+            </nav>
+        </section>
+        <section class="w-full h-fit  bg-blanc2  outline outline-noir  outline-2
+        px-2 lg:px-8 py-1 lg:py-2 flex flex-col gap-1 lg:gap-4">
+            <article class="w-full py-2 flex flex-col lg:flex-row gap-1 lg:gap-2">
+                <p class="paragraphe w-full ">
+                    As all good arcade style games, this one is meant to be replayed a few times before you can fully
+                    grasp the deep mechanics. To represent this philosophy, here all of the character’s skills are
+                    available right from the start, and is inspired by the first Wizard of legend, and Noita. And the
+                    level design here is a mix of sonic the hedgehog and mario world inspirations, as a means for the
+                    player to learn the best routes to kill all of the enemies as fast as possible.
+                </p>
+                <div class="w-full h-fit"><img class="w-full h-auto rounded-lg" src="../Images/EGO/Image4.png" alt=""
+                        srcset=""></div>
+            </article>
+            <section class="flex flex-col lg:flex-row gap-1 lg:gap-2">
+                <div class="w-full h-fit"><img class="w-full h-auto rounded-lg" src="../Images/EGO/Image5.png" alt=""
+                        srcset=""></div>
+                <div class="w-full h-fit"><img class="w-full h-auto rounded-lg" src="../Images/EGO/Image6.png" alt=""
+                        srcset=""></div>
+            </section>
+        </section>
+    </main>
+    <div
+        class="z-10 transi-enter w-full h-[100vh] lg:px-[224px] bg-blanc2  items-center flex justify-center absolute top-0 left-0 transition-all ease-in-out duration-1000">
+    </div>
+    <script src="../Scripts/Transi.js" defer></script>
+    <script src="../Scripts/NavInstancer.js" defer></script>
+    <script src="../Scripts/OpenMain.js" defer></script>
+</body>
+
+</html>
